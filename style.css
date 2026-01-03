@@ -240,4 +240,7 @@ text-shadow: 0 0 15px #00f0ff;
     .skills {
         flex-direction: column;
     }
+        .paragraf{
+        font-size: 10px;
+    }
 }
