@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
     margin: 0;
     padding: 0;
@@ -8,34 +8,31 @@
 html,
 body {
     width: 100%;
-    height: 100%;
     background: #000;
     font-family: sans-serif;
+    color: #00ffff;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 .hero {
     min-height: 100vh;
-    width: 100%;
-    background: #000;
-
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-
     padding-top: 40px;
 }
 
-/* Profile container */
+/* ================= PROFILE ================= */
 .profile {
+    width: 100%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 18px;
+    gap: 20px;
     text-align: center;
 }
 
-/* Avatar neon */
+/* ================= AVATAR ================= */
 .avatar-wrapper {
     width: 160px;
     height: 160px;
@@ -43,8 +40,8 @@ body {
     border-radius: 50%;
 
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 
     background: linear-gradient(270deg,
             #00f0ff,
@@ -60,7 +57,7 @@ body {
         0 0 60px rgba(0, 240, 255, 0.6);
 }
 
-.avatar-wrapper img {
+.avatar {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -68,143 +65,135 @@ body {
     background: #000;
 }
 
-/* Name */
+/* ================= NAME ================= */
 .name {
     font-size: 26px;
     font-weight: bold;
     animation: neonGlow 4s linear infinite;
 }
 
-/* Description */
+/* ================= TITLE ================= */
 .par {
     font-size: 18px;
-    color: #00ffff;
-    max-width: 320px;
-    line-height: 1.6;
+    opacity: 0.9;
 }
 
-/* Skills */
+/* ================= SKILLS ================= */
 .skills {
     display: flex;
-    gap: 14px;
-    margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
 }
 
 .tava {
-    width: 110px;
-    height: 44px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+    padding: 10px 14px;
     border-radius: 10px;
     font-weight: bold;
     color: #000;
+    white-space: nowrap;
 }
 
+/* Skill colors */
 .tava1 {
     background: #ff1212;
-    box-shadow: 0 0 15px #da0404;
+    box-shadow: 0 0 12px #ff1212;
 }
 
 .tava2 {
     background: #0066ff;
-    box-shadow: 0 0 15px #0066ff;
-}
-.tava3{
-    background: #00f0ff;
-    box-shadow: 0 0 15px #00f0ff;
-    font-size: 10px;
-}
-.tava4{
-background: #00ff1e;
-box-shadow: 0 0 15px #00ff1e;
-}
-.tava5 {
-background: #ff0073;
-box-shadow: 0 0 15px #ff0073 ;
-}
-.tava6 {
-background: #ff0000;
-box-shadow: 0 0 15px #ff0000;
-}
-.tava7 {
-background: #ff9100;
-box-shadow: 0 0 15px #ff9100;
-font-size: 15px;
-}
-.tava8 {
-background: #00ff77;
-box-shadow: 0 0 15px #00ff77;
-} 
-.tava9 {
-background: #2f00ff;
-box-shadow: 0 0 15px #2f00ff;
-}
-.tava10 {
-background: #33ff00;
-box-shadow: 0 0 15px #33ff00;
-}
-.paragraf{
-    max-width: 100%;
-    position: absolute;
-    top: 50%;
-color: #00f0ff;
-font-size: 20px;
-line-height: 1.7;
-text-align: center;
-text-shadow: 0 0 15px #00f0ff;
-}
-.content{ 
-    max-width: 100%;
-    display: flex;
-position: absolute;
-top: 100%;
-right: 44%;
-align-items: center;
-color: #00f0ff;
-font-weight: bolder;
-text-shadow: 0 0 15px #00f0ff;
-}
-.phone{
-    max-width: 100%;
-    display: flex;
-position: absolute;
-top: 106%;
-right: 43%;
-color: #00f0ff;
-font-size: 15px;
-font-weight: lighter;
-text-shadow: 0 0 15px #00f0ff;
-}
-.telgeram {
-    max-width: 100%;
-    display: flex;
-    position: absolute;
-    top: 110%;
-    right: 44%;
-    font-size: 15px;
-    font-weight: lighter;
-    color: #00f0ff;
-    text-shadow:0 0 15px #00f0ff;
+    box-shadow: 0 0 12px #0066ff;
 }
 
-/* Animations */
+.tava3 {
+    background: #00f0ff;
+    box-shadow: 0 0 12px #00f0ff;
+    font-size: 13px;
+}
+
+.tava4 {
+    background: #00ff1e;
+    box-shadow: 0 0 12px #00ff1e;
+}
+
+.tava5 {
+    background: #ff0073;
+    box-shadow: 0 0 12px #ff0073;
+}
+
+.tava6 {
+    background: #ff0000;
+    box-shadow: 0 0 12px #ff0000;
+}
+
+.tava7 {
+    background: #ff9100;
+    box-shadow: 0 0 12px #ff9100;
+}
+
+.tava8 {
+    background: #00ff77;
+    box-shadow: 0 0 12px #00ff77;
+}
+
+.tava9 {
+    background: #2f00ff;
+    box-shadow: 0 0 12px #2f00ff;
+}
+
+.tava10 {
+    background: #33ff00;
+    box-shadow: 0 0 12px #33ff00;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    font-size: 18px;
+    line-height: 1.9;
+    text-align: center;
+    text-shadow: 0 0 12px rgba(0, 255, 255, 0.6);
+}
+
+/* ================= CONTACT ================= */
+.contact {
+    margin: 60px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 16px;
+}
+
+/* ================= ANIMATIONS ================= */
 @keyframes neonGlow {
     0% {
         color: red;
-        text-shadow: 0 0 5px red, 0 0 15px red;
+        text-shadow: 0 0 6px red;
     }
 
     50% {
         color: cyan;
-        text-shadow: 0 0 5px cyan, 0 0 20px cyan;
+        text-shadow: 0 0 16px cyan;
     }
 
     100% {
         color: red;
-        text-shadow: 0 0 5px red, 0 0 25px red;
+        text-shadow: 0 0 20px red;
     }
 }
 
@@ -222,7 +211,7 @@ text-shadow: 0 0 15px #00f0ff;
     }
 }
 
-/* Mobile */
+/* ================= MOBILE ================= */
 @media (max-width: 480px) {
     .avatar-wrapper {
         width: 120px;
@@ -233,14 +222,7 @@ text-shadow: 0 0 15px #00f0ff;
         font-size: 20px;
     }
 
-    .par {
-        font-size: 16px;
-    }
-
-    .skills {
-        flex-direction: column;
-    }
-        .paragraf{
-        font-size: 10px;
+    .about {
+        font-size: 15px;
     }
 }
